@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    overflow: hidden;
+}
+
+.images {
+    width: 1600px;
+    height: 400px;
+}
+
+.images li {
+    float: left;
+    width: 400px;
+    height: 400px;
+
+}
+
+.carousel-img {
+    width: 100%;
+    height: 500px;
+}
+
+#container .btn {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    line-height: 20px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.pointList, .pointList li {
+    list-style: none;
+}
+
+.pointList {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+}
+
+.pointList li {
+    cursor: pointer;
+    /*这里有个问题是float不能从左向右排列是为什么*/
+    float: left;
+    width: 15px;
+    margin-left: 5px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.pointList .current {
+    background-color: orange;
+
+}
+
+.navbar {
+    padding: 0;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+}
+
+.imgSize{
+    height: 500px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.cardSize{
+    height: 300px;
+}
+
+.showThreeLines{
+    width: 59px;
+    overflow:hidden;
+    /* white-space:nowrap; */
+    display:-webkit-box;
+    -webkit-line-clamp: 3;/*第几行裁剪*/
+    -webkit-box-orient:vertical;
+    text-overflow: ellipsis;
+}
